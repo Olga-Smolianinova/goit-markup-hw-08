@@ -1,0 +1,66 @@
+/* Team section 4 */
+.team-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-ref {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: $white-color;
+  /* outline: 2px solid fuchsia; */
+
+  &:hover,
+  &:focus {
+    transform: rotate(360deg);
+    transition: transform 250ms $timing-function;
+
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}
+
+.team-ref .team-icons {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* FOOTER general */
+.footer-link {
+  display: flex;
+}
+
+.footer-ref {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+
+  color: $white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    transform: rotate(360deg);
+    transition: transform 250ms $timing-function;
+
+    background-color: $accent-color;
+  }
+}
+
+.footer-icons {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

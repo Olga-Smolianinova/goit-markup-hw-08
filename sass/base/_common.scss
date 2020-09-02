@@ -1,0 +1,91 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $white-color;
+
+  font-family: $main-font-family;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* outline: 5px solid firebrick; */
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: $title-text-color;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+}
+
+/* SECTIONS general */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section.no-padding {
+  padding-top: 0;
+}
+.section-title {
+  margin: 0;
+  color: $title-text-color;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.section-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $primary-text-color;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.features-title,
+.team-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}

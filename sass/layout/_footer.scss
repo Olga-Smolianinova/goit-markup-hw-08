@@ -1,0 +1,80 @@
+/* FOOTER general */
+.footer {
+  background-color: #2f303a;
+}
+.footer-main {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: $white-color;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* Blok 1 Adress */
+.footer-contacts {
+  width: 270px;
+  margin-right: 30px;
+  /* outline: 2px solid palevioletred; */
+}
+
+.adress {
+  margin-top: 20px;
+
+  color: $white-color;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.adress a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.adr-link {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+/* blok 2 Join */
+.footer-join {
+  width: 270px;
+  margin-right: 30px;
+  /* outline: 2px solid palevioletred; */
+}
+
+/* Blok 3 Subscription */
+.subscription {
+  min-width: 570px;
+  /* outline: 2px solid palevioletred; */
+}
+.subscription-input {
+  margin-right: 12px;
+  padding: 15px;
+  width: 339px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.sub-icon {
+  margin-left: 10px;
+  vertical-align: middle;
+  /* outline: 2px solid black; */
+}
