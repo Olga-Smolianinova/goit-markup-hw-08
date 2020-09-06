@@ -17,6 +17,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // outline: 2px solid teal;
 }
 
 body {
@@ -28,13 +29,30 @@ body {
 }
 
 .container {
-  width: 1200px;
+  // width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
   /* outline: 5px solid firebrick; */
+
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
+
+// .flexbox {
+// display: flex;
+// }
 
 .list {
   list-style: none;
@@ -56,23 +74,36 @@ h3 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* SECTIONS general */
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section.no-padding {
   padding-top: 0;
+  display: none;
 }
 .section-title {
   margin: 0;
   color: $title-text-color;
 
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+
+  @include for-size(desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .section-text {
   margin-top: 0;

@@ -1,13 +1,14 @@
 /* FOOTER general */
 .footer {
   background-color: #2f303a;
+  text-align: center;
 }
-.footer-main {
-  display: flex;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+// .footer-main {
+//   display: flex;
+//   align-items: baseline;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 .footer-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -52,13 +53,16 @@
 
 /* Blok 3 Subscription */
 .subscription {
-  min-width: 570px;
-  /* outline: 2px solid palevioletred; */
+  width: 100%;
+  // min-width: 570px;
+  //   /* outline: 2px solid palevioletred; */
 }
 .subscription-input {
   margin-right: 12px;
   padding: 15px;
-  width: 339px;
+
+  width: 100%;
+  // width: 339px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 

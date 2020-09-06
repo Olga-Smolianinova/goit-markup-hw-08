@@ -9,17 +9,17 @@
       rel="stylesheet"
     /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
 
   <body>
-    <!-- Header container -->
+    <!-- HEADER CONTAINER -->
     <header>
+      <!-- Logo -->
       <div class="container main-nav">
         <nav class="main-nav">
           <a href="/" class="logo"> <span class="logo-web">Web</span> Studio</a>
 
+          <!-- Menu-Navigation -->
           <ul class="navigation list">
             <li class="nav-item">
               <a href="" class="link current">Студия</a>
@@ -33,6 +33,7 @@
           </ul>
         </nav>
 
+        <!-- Contacts -->
         <ul class="contacts-nav list">
           <li class="item">
             <a class="contacts-link" href="mailto:info@devstudio.com">
@@ -68,7 +69,7 @@
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
-          <ul class="features list">
+          <ul class="flexbox list">
             <li class="features-items">
               <div class="features-sprite">
                 <svg class="features-icons">
@@ -129,7 +130,7 @@
       <section class="section no-padding">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="work-item list">
+          <ul class="flexbox list">
             <li class="work-element">
               <img
                 src="./images/desktop.jpg"
@@ -163,42 +164,89 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
-          <ul class="team list">
+          <ul class="flexbox list">
             <li class="team-element">
-              <img
-                src="./images/designer.jpg"
-                alt="Дизайнер Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/designer1200.jpg    1x,
+                    ./images/desktop/designer1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/designer768.jpg    1x,
+                    ./images/tablet/designer768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/designer480.jpg    1x,
+                    ./images/mobile/designer480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mobile/designer480.jpg"
+                  alt="Дизайнер Игорь Демьяненко"
+                  width="270"
+                />
+              </picture>
 
               <div class="team-sign">
                 <h3 class="team-title">Игорь Демьяненко</h3>
                 <p class="team-text" lang="en">Product Designer</p>
 
                 <ul class="team-link list">
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Инстаграм">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Инстаграм"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Твиттер">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Твиттер"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Фейсбук">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Фейсбук"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Линкедин">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Линкедин"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -209,40 +257,87 @@
             </li>
 
             <li class="team-element">
-              <img
-                src="./images/developer.jpg"
-                alt="Фронтенд Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/developer1200.jpg    1x,
+                    ./images/desktop/developer1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/developer768.jpg    1x,
+                    ./images/tablet/developer768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/developer480.jpg    1x,
+                    ./images/mobile/developer480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mobile/developer480.jpg"
+                  alt="Фронтенд Ольга Репина"
+                  width="270"
+                />
+              </picture>
 
               <div class="team-sign">
                 <h3 class="team-title">Ольга Репина</h3>
                 <p class="team-text" lang="en">Frontend Developer</p>
 
                 <ul class="team-link list">
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Инстаграм">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Инстаграм"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Твиттер">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Твиттер"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Фейсбук">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Фейсбук"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Линкедин">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Линкедин"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -253,39 +348,87 @@
             </li>
 
             <li class="team-element">
-              <img
-                src="./images/marketing.jpg"
-                alt="Маркетолог Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/marketing1200.jpg    1x,
+                    ./images/desktop/marketing1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/marketing768.jpg    1x,
+                    ./images/tablet/marketing768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/marketing480.jpg    1x,
+                    ./images/mobile/marketing480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mobile/marketing480.jpg"
+                  alt="Маркетолог Николай Тарасов"
+                  width="270"
+                />
+              </picture>
 
               <div class="team-sign">
                 <h3 class="team-title">Николай Тарасов</h3>
                 <p class="team-text" lang="en">Marketing</p>
 
                 <ul class="team-link list">
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Инстаграм">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Инстаграм"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Твиттер">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Твиттер"
+                    >
                       <svg class="team-icons">
-                        <use href="./images/sprite.svg#twitter"></use></svg
-                    ></a>
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Фейсбук">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Фейсбук"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Линкедин">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Линкедин"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -296,40 +439,87 @@
             </li>
 
             <li class="team-element">
-              <img
-                src="./images/ui.jpg"
-                alt="Дизайнер Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/ui1200.jpg    1x,
+                    ./images/desktop/ui1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ui768.jpg    1x,
+                    ./images/tablet/ui768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/ui480.jpg    1x,
+                    ./images/mobile/ui480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mobile/ui480.jpg"
+                  alt="Дизайнер Михаил Ермаков"
+                  width="270"
+                />
+              </picture>
 
               <div class="team-sign">
                 <h3 class="team-title">Михаил Ермаков</h3>
                 <p class="team-text" lang="en">UI Designer</p>
 
                 <ul class="team-link list">
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Инстаграм">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Инстаграм"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Твиттер">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Твиттер"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Фейсбук">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Фейсбук"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a class="team-ref" href="" aria-label="ссылка Линкедин">
+                  <li class="team-list">
+                    <a
+                      class="team-ref"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="ссылка Линкедин"
+                    >
                       <svg class="team-icons">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -346,7 +536,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="clients list">
+          <ul class="flexbox list">
             <li class="clients-element">
               <a class="clients-link" href="">
                 <svg class="clients-icons" width="44" height="49">

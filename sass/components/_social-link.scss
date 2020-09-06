@@ -1,7 +1,15 @@
 /* Team section 4 */
 .team-link {
   display: flex;
-  justify-content: space-between;
+}
+
+.team-list {
+  width: calc((100% - 3 * 10px) / 4);
+  margin-right: 10px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
 .team-ref {

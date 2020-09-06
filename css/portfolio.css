@@ -423,12 +423,30 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
   /* outline: 5px solid firebrick; */
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .list {
@@ -450,24 +468,41 @@ h3 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* SECTIONS general */
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section.no-padding {
   padding-top: 0;
+  display: none;
 }
 
 .section-title {
   margin: 0;
   color: #212121;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .section-text {
@@ -570,9 +605,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.team-list {
+  width: calc((100% - 3 * 10px) / 4);
+  margin-right: 10px;
+}
+
+.team-list:nth-child(4n) {
+  margin-right: 0;
 }
 
 .team-ref {
@@ -667,10 +708,7 @@ img {
 
 /* NAVIGATION */
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 85px;
+  display: none;
 }
 
 .navigation .nav-item:not(:last-child) {
@@ -725,13 +763,7 @@ img {
 
 /* CONTACTS */
 .contacts-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  margin-left: auto;
+  display: none;
   /* outline: 2px solid gold; */
 }
 
@@ -871,17 +903,7 @@ img {
 /* FOOTER general */
 .footer {
   background-color: #2f303a;
-}
-
-.footer-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  text-align: center;
 }
 
 .footer-title {
@@ -927,14 +949,13 @@ img {
 
 /* Blok 3 Subscription */
 .subscription {
-  min-width: 570px;
-  /* outline: 2px solid palevioletred; */
+  width: 100%;
 }
 
 .subscription-input {
   margin-right: 12px;
   padding: 15px;
-  width: 339px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   font-size: 16px;

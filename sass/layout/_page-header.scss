@@ -8,8 +8,9 @@
 }
 /* NAVIGATION */
 .navigation {
-  display: flex;
-  margin-left: 85px;
+  display: none;
+  // display: flex;
+  // margin-left: 85px;
 }
 .navigation .nav-item:not(:last-child) {
   position: relative;
@@ -56,9 +57,10 @@
 }
 /* CONTACTS */
 .contacts-nav {
-  display: flex;
-  align-items: baseline;
-  margin-left: auto;
+  display: none;
+  // display: flex;
+  // align-items: baseline;
+  // margin-left: auto;
   /* outline: 2px solid gold; */
 }
 .contacts-nav .item + .item {
