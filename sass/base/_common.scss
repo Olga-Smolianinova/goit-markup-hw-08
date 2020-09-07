@@ -17,7 +17,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 2px solid teal;
+  outline: 2px solid teal;
 }
 
 body {
@@ -90,7 +90,10 @@ img {
 }
 .section.no-padding {
   padding-top: 0;
-  display: none;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .section-title {
   margin: 0;
@@ -107,7 +110,7 @@ img {
 }
 .section-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 
   color: $primary-text-color;
 
@@ -119,4 +122,8 @@ img {
 .team-title {
   margin-top: 0;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }

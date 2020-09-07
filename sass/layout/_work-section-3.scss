@@ -1,4 +1,7 @@
 /* Work section 3 */
+.work {
+  display: flex;
+}
 .work-element {
   position: relative;
   width: calc((100% - 2 * 30px) / 3);

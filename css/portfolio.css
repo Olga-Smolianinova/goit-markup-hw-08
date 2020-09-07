@@ -413,6 +413,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  outline: 2px solid teal;
 }
 
 body {
@@ -487,7 +488,12 @@ img {
 
 .section.no-padding {
   padding-top: 0;
-  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .section.no-padding {
+    display: none;
+  }
 }
 
 .section-title {
@@ -507,7 +513,7 @@ img {
 
 .section-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   color: #757575;
   font-weight: 400;
   font-size: 14px;
@@ -518,6 +524,13 @@ img {
 .team-title {
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .features-title,
+  .team-title {
+    text-align: center;
+  }
 }
 
 .logo {
@@ -708,7 +721,16 @@ img {
 
 /* NAVIGATION */
 .navigation {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 85px;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
 }
 
 .navigation .nav-item:not(:last-child) {
@@ -763,8 +785,20 @@ img {
 
 /* CONTACTS */
 .contacts-nav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-left: auto;
   /* outline: 2px solid gold; */
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-nav {
+    display: none;
+  }
 }
 
 .contacts-nav .item + .item {
