@@ -17,7 +17,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid teal;
+  // outline: 2px solid teal;
 }
 
 body {
@@ -49,10 +49,6 @@ body {
     width: 1200px;
   }
 }
-
-// .flexbox {
-// display: flex;
-// }
 
 .list {
   list-style: none;

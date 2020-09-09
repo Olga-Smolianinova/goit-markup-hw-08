@@ -43,16 +43,19 @@
 /* FOOTER general */
 .footer-link {
   display: flex;
+  justify-content: center;
 }
-
+.footer-item {
+  margin-right: 10px;
+}
 .footer-ref {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 44px;
+  min-width: 44px;
   height: 44px;
-  margin-right: 10px;
+
   border-radius: 50%;
 
   color: $white-color;
