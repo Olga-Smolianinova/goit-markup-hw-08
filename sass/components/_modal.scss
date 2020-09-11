@@ -8,6 +8,8 @@
 
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
+  padding: 95px 15px;
 
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -19,26 +21,32 @@
   transform: translate(-50%, -50%) scale(0.8);
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms $timing-function;
-
   padding: 40px;
-  width: 528px;
-  min-width: 528px;
-  height: 581px;
+  height: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   background-color: $white-color;
+
+  @include for-size(tablet-landscape) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $timing-function;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  @include for-size(desktop) {
+    max-width: 528px;
+  }
 }
 .modal-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 15px;
 
   width: 30px;
   height: 30px;
@@ -46,8 +54,10 @@
   border-radius: 50%;
   background-color: $white-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $accent-color;
+    outline-color: $accent-color;
   }
 }
 
@@ -57,10 +67,14 @@
   padding: 0;
 
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
 
   color: $title-text-color;
+
+  @include for-size(desktop) {
+    line-height: 1.15;
+  }
 }
 
 .form-field {
@@ -119,18 +133,22 @@
 .checkbox-field {
   display: flex;
   align-items: center;
-  padding-left: 13px;
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
 
   color: $primary-text-color;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox-icon {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 5px;
   width: 16px;
   height: 15px;
   border: 2px solid $title-text-color;
@@ -150,7 +168,15 @@
 }
 
 .form-btn {
-  position: absolute;
-  left: 164px;
-  bottom: 40px;
+  // position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  // left: 125px;
+  // bottom: 40px;
+
+  @include for-size(desktop) {
+    left: 164px;
+  }
 }
