@@ -16,6 +16,18 @@
     display: none;
   }
 }
+
+.nav-item {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include for-size(tablet-landscape) {
+    margin-bottom: 0;
+  }
+}
+
 .navigation .nav-item:not(:last-child) {
   position: relative;
   margin-right: 50px;
@@ -59,6 +71,7 @@
   transform: scaleX(1.1);
   transition: transform 250ms $timing-function;
 }
+
 // /* CONTACTS */
 .contacts-nav {
   @media screen and (max-width: 767px) {
@@ -83,15 +96,20 @@
 
 .contacts-link {
   display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-bottom: 16px;
+  // padding-top: 5px;
+  // padding-bottom: 5px;
 
   color: $primary-text-color;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include for-size(tablet-landscape) {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 
   @include for-size(desktop) {
     padding-top: 32px;

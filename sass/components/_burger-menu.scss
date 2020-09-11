@@ -1,10 +1,20 @@
 // BURGER MENU
 .menu-btn {
+  position: absolute;
+  top: 22px;
+  right: 15px;
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    outline-color: transparent;
+    transition: color 250ms $timing-function;
+  }
 
   & .icon-cross {
     display: none;
@@ -24,9 +34,11 @@
 
 .menu-container {
   padding: 60px 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
   background-color: $white-color;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
     position: absolute;
     top: 100%;
@@ -45,25 +57,31 @@
   }
 
   @include for-size(tablet-landscape) {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    // display: flex;
+    // flex-direction: column;
+    // flex-grow: 1;
+    display: none;
   }
 }
 
-// Draft
-// Mobile-navigation
-.mobile-nav {
+// // Draft
+// // Mobile-navigation
+.mobile {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
+// .mobile-nav {
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// }
 .mobile-nav .nav-item:not(:last-child) {
   position: relative;
-  //   margin-right: 50px;
 }
 .mobile-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: $title-text-color;
 
@@ -78,39 +96,40 @@
 
 .mobile-nav .link.current {
   color: $accent-color;
-}
-.mobile-nav::after {
-  position: absolute;
 
-  content: "";
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $accent-color;
-}
-.link.current:hover::after {
-  transform: scaleX(1.1);
-  transition: transform 250ms $timing-function;
+  .link.current::after {
+    position: absolute;
+
+    content: "";
+    left: 0;
+    bottom: -8px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+  }
+  .link.current:hover::after {
+    transform: scaleX(1.1);
+    transition: transform 250ms $timing-function;
+  }
 }
 
-// /* CONTACTS */
-.mobile-contacts-div {
-  display: flex;
-  //   align-items: center;
-  justify-content: center;
-}
+// // /* CONTACTS */
+// .mobile-contacts-div {
+//   display: flex;
+//   //   align-items: center;
+//   justify-content: center;
+// }
 // .mobile-contacts {
 //   outline: 1px solid lightcoral;
 // }
 
-.contacts-link {
-  display: block;
-  margin-bottom: 8px;
+// .contacts-link {
+//   display: block;
+//   margin-bottom: 8px;
 
-  color: $primary-text-color;
-}
+//   color: $primary-text-color;
+// }
 .mobile-contacts .contacts-link:hover,
 .contacts-link .contacts-link:focus {
   transform: scale(1.1);
