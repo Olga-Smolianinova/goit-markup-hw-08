@@ -64,7 +64,6 @@
   }
 }
 
-// // Draft
 // // Mobile-navigation
 .mobile {
   display: flex;
@@ -72,11 +71,7 @@
   align-items: center;
   margin-bottom: 40px;
 }
-// .mobile-nav {
-// display: flex;
-// flex-direction: column;
-// align-items: center;
-// }
+
 .mobile-nav .nav-item:not(:last-child) {
   position: relative;
 }
@@ -114,22 +109,7 @@
   }
 }
 
-// // /* CONTACTS */
-// .mobile-contacts-div {
-//   display: flex;
-//   //   align-items: center;
-//   justify-content: center;
-// }
-// .mobile-contacts {
-//   outline: 1px solid lightcoral;
-// }
-
-// .contacts-link {
-//   display: block;
-//   margin-bottom: 8px;
-
-//   color: $primary-text-color;
-// }
+// // /* Mobile-CONTACTS */
 .mobile-contacts .contacts-link:hover,
 .contacts-link .contacts-link:focus {
   transform: scale(1.1);

@@ -8,15 +8,6 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* raleway-regular - latin_cyrillic */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/raleway-v17-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/raleway-v17-latin_cyrillic-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 /* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
@@ -1381,7 +1372,6 @@ img {
   height: 70px;
 }
 
-/* Work section 3 */
 .work {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1416,7 +1406,6 @@ img {
   text-align: center;
 }
 
-/* Team section 4 */
 .color {
   background-color: #f5f4fa;
 }

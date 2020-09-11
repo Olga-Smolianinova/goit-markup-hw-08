@@ -168,13 +168,9 @@
 }
 
 .form-btn {
-  // position: absolute;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-  // left: 125px;
-  // bottom: 40px;
 
   @include for-size(desktop) {
     left: 164px;

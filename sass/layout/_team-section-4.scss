@@ -1,4 +1,3 @@
-/* Team section 4 */
 .color {
   background-color: $secondary-background-color;
 }
@@ -66,12 +65,4 @@
 .team-sign {
   text-align: center;
   margin: 30px 24px 24px 32px;
-  // margin: 30px 122px 24px 122px;
-
-  // @include for-size(tablet-landscape) {
-  //   margin: 30px 74px 24px 74px;
-  // }
-  // @include for-size(desktop) {
-  //   margin: 30px 24px 24px 32px;
-  // }
 }
